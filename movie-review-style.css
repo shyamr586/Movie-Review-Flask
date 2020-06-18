@@ -1,0 +1,1099 @@
+@font-face{
+	font-family:list-font;
+	src: url("../fonts/ChanticleerRomanNF.otf");
+}
+
+@font-face{
+	font-family:account-font;
+	src: url("../fonts/RUTAN___.ttf");
+}
+
+body{
+	padding:0;
+	margin:0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.nav-bar {
+	list-style-type: none;
+	z-index:1500;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#icon-element{
+	float:right;
+}
+#icon-image{
+	width:15px;
+	height:15px;
+}
+
+.nav-bar-li{
+  float: left;
+}
+
+.nav-bar-a {
+	
+  display: block;
+  color: white;
+  font-family:list-font;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color:black;
+}
+
+#icon-a:hover{
+	 background-color: black;
+}
+
+.background-class{
+	position: fixed;
+	z-index: -1000;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top:0;
+	left:0;
+}
+
+#videobg{
+	position:absolute;
+	top:0;
+	left:0;
+	min-height:100%;
+	min-width:100%;
+	max-width:100%;
+	background-size: cover;
+	filter: opacity(50%);
+	background-image: url("../image/film-background.jpg");
+}
+
+#videobg-home{
+	position:absolute;
+	top:0;
+	left:0;
+	min-height:100%;
+	min-width:100%;
+	max-width:100%;
+	filter: opacity(40%);
+	background-size: cover;
+	background-image: url("../image/film-background.jpg");
+
+}
+
+.content{
+	padding-left:30%;
+}
+
+@font-face{
+	font-family:review-font;
+	src: url("../fonts/goodfish rg.ttf");
+}
+
+h2{
+	color:white;
+}
+
+#firstpara-interstellar{
+	z-index: 1000;
+	color:rgb(135,206,250);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-arrival{
+	z-index: 1000;
+	color:rgb(192,192,192);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-spirited-away{
+	z-index: 1000;
+	color:rgb(227,168,87);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-br2049{
+	z-index: 1000;
+	color:rgb(219,112,147);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-donnie-darko{
+	z-index: 1000;
+	color:rgb(15,82,186);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-forrest-gump{
+	z-index: 1000;
+	color:rgb(144,238,144);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-john-wick{
+	z-index: 1000;
+	color:rgb(51,171,240);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-leon-the-professional{
+	z-index: 1000;
+	color:rgb(179,189,72);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-twbb{
+	z-index: 1000;
+	color:rgb(197, 166, 70);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-taxi-driver{
+	z-index: 1000;
+	color:yellow;
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-seven-samurai{
+	z-index: 1000;
+	color:white;
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-joker{
+	z-index: 1000;
+	color:rgb(255,50,0);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-spider-man{
+	z-index: 1000;
+	color:red;
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-goodfellas{
+	z-index: 1000;
+	color:rgb(255,239,213);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-oldboy{
+	z-index: 1000;
+	color:rgb(138,43,226);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-shining{
+	z-index: 1000;
+	color:rgb(255,66,0);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#firstpara-fight-club{
+	z-index: 1000;
+	color:rgb(255,192,203);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	letter-spacing:1px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+	border-radius:20px;
+}
+
+#spoiler-interstellar, #spoiler-arrival, #spoiler-br2049, #spoiler-donnie-darko, #spoiler-taxi-driver, #spoiler-fight-club{
+	color:black;
+	background-color:black;
+	padding-left:10;
+	padding-right:10;
+	padding-bottom:10;
+	font-family:review-font;
+	font-size:22px;
+	font-weight:600;
+	width:90%;
+}
+
+#spoiler-interstellar>a, #spoiler-arrival>a, #spoiler-br2049>a, #spoiler-donnie-darko>a, #spoiler-taxi-driver>a{
+	color:black;
+	background-color:black;
+	padding-left:10;
+	padding-right:10;
+	padding-bottom:10;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+}
+
+#spoiler-interstellar:hover{
+	color:rgb(135,206,250);
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#spoiler-arrival:hover{
+	color:rgb(192,192,192);
+	padding:20px;
+	font-family:review-font;
+	font-size:22px;
+	font-weight:100;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#spoiler-br2049:hover{
+	color:rgb(219,112,147);
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#spoiler-donnie-darko:hover{
+	color:rgb(15,82,186);
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#spoiler-taxi-driver:hover{
+	color:yellow;
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#spoiler-fight-club:hover{
+	color:rgb(255,192,203);
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+	font-weight:600;
+	width:90%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#link-interstellar{
+	color:white;
+	text-decoration:none;
+}
+
+#link-arrival{
+	color:white;
+	text-decoration:none;
+}
+
+#link-spirited-away{
+	color: rgb(127,255,0);
+	text-decoration:none;
+}
+
+#link-br2049{
+	color:rgb(70,102,255);
+	text-decoration:none;
+}
+
+#link-donnie-darko{
+	color:white;
+	text-decoration:none;
+}
+
+#link-forrest-gump{
+	color:yellow;
+	text-decoration:none;
+}
+
+#link-john-wick{
+	color:rgb(174,234,255);
+	text-decoration:none;
+}
+
+#link-leon-the-professional{
+	color:rgb(58,95,11);
+	text-decoration:none;
+}
+
+#link-twbb{
+	color:#8a0303;
+	text-decoration:none;
+}
+
+#link-taxi-driver{
+	color:white;
+	text-decoration:none;
+}
+
+#link-seven-samurai{
+	color:gray;
+	text-decoration:none;
+}
+
+#link-joker{
+	color:yellow;
+	text-decoration:none;
+}
+
+#link-spider-man{
+	color:rgb(51,171,255);
+	text-decoration:none;
+}
+
+#link-goodfellas{
+	color:rgb(205,133,63);
+	text-decoration:none;
+}
+
+#link-oldboy{
+	color:rgb(230,230,250);
+	text-decoration:none;
+}
+
+#link-shining{
+	color:rgb(124,252,0);
+	text-decoration:none;
+}
+
+#link-fight-club{
+	color:rgb(255,105,180);
+	text-decoration:none;
+}
+
+#spoiler-interstellar>a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+#spoiler-arrival>a:hover{
+	color:white;
+	text-decoration:none;
+	font-family:review-font;
+	font-size:21px;
+	letter-spacing:1px;
+	font-weight:100;
+}
+
+#spoiler-br2049>a:hover{
+	color:rgb(70,102,255);
+	text-decoration:none;
+}
+
+#spoiler-donnie-darko>a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+#spoiler-taxi-driver>a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+#spoiler-fight-club>a:hover{
+	color:rgb(255,105,180);
+	text-decoration:none;
+}
+
+@font-face{
+	font-family:rating-font;
+	src: url("../fonts/Bradley Gratis.ttf");
+}
+
+#rating{
+	color:black;
+	padding:20px;
+	font-size:30px;
+	font-family: rating-font;
+	letter-spacing:1px;
+	font-weight:300;
+	width:90%;
+	background-color: rgba(255,255,255,0.7);
+}
+
+#table-container{
+	
+	background-color: rgba(0,0,0,0.5);
+	padding:10px;
+	margin:10px auto;
+	
+}
+
+table{
+	color:white;
+	padding:10px;
+	margin:10px auto;
+}
+
+th,td{
+	color:white;
+	padding:10px;
+	text-align: center;
+	border:1px solid white;
+}
+
+#cast{
+	width:15%;
+}
+
+
+#title{
+	color:white;
+	z-index: 1000;
+	text-align:center;
+	letter-spacing:3px;
+	padding-top:40px;
+}
+
+#music-title{
+	color:white;
+	z-index: 1000;
+	text-align:center;
+	letter-spacing:3px;
+}
+
+#player-position {
+  display: flex;
+  justify-content: center;
+}
+
+#movie-poster{
+	margin-left:4%;
+	margin-top: 2%;
+	float:left;
+}
+
+#poster-image{
+	height: 390px;
+	width:260px;;
+}
+
+
+#gallery{
+	float:left;
+	margin-left:10%;
+	margin-top:50px;
+}
+
+.gallery-image-leon:hover{
+	background-color: rgba(165,42,42,0.5);
+}
+
+.gallery-image-br2049:hover{
+	background-color: rgba(0,0,255,0.5);
+}
+
+.gallery-image-forrest-gump:hover{
+	background-color: rgba(255,229,180,0.5);
+}
+
+.gallery-image-arrival:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.gallery-image-spirited-away:hover{
+	background-color: rgba(255,255,0,0.5);
+}
+
+.gallery-image-interstellar:hover{
+	background-color: rgba(104,40,96,0.5);
+}
+
+.gallery-image-donnie-darko:hover{
+	background-color: rgba(0, 0, 34.9,0.5);
+}
+
+.gallery-image-john-wick:hover{
+	background-color: rgba(51,171,240,0.5);
+}
+
+.gallery-image-twbb:hover{
+	background-color: rgba(166,16,30,0.5);
+}
+
+.gallery-image-taxi-driver:hover{
+	background-color: rgba(255,255,0,0.5);
+}
+
+.gallery-image-seven-samurai:hover{
+	background-color: rgba(211,211,211,0.5);
+}
+
+.gallery-image-joker:hover{
+	background-color: rgba(255,0,0,0.5);
+}
+
+.gallery-image-goodfellas:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.gallery-image-spider-man:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.gallery-image-oldboy:hover{
+	background-color: rgba(75,0,130,0.5);
+}
+
+.gallery-image-shining:hover{
+	background-color: rgba(173,255,47,0.5);
+}
+
+.gallery-image-fight-club:hover{
+	background-color: rgba(255,182,193,0.5);
+}
+
+.gallery-image-leon, .gallery-image-br2049, .gallery-image-forrest-gump, .gallery-image-arrival, .gallery-image-spirited-away,
+.gallery-image-interstellar, .gallery-image-donnie-darko, .gallery-image-john-wick, .gallery-image-twbb, .gallery-image-taxi-driver, .gallery-image-seven-samurai,
+.gallery-image-joker,.gallery-image-goodfellas,.gallery-image-spider-man, .gallery-image-oldboy, .gallery-image-shining, .gallery-image-fight-club{
+	width:350px;
+	height:200px;
+	padding:15px;
+	border:5px solid black;
+}
+
+.gallery-link{
+	text-decoration:none;
+}
+
+@media only screen and (max-width: 2000px){       /* this is because we want the large monitor size to have extra margin and default, whhihc is smaller to have less */
+	#gallery{			
+		display:grid;
+		grid-template-columns: auto auto auto;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+#gallery{			
+	display:grid;
+	grid-template-columns: auto auto auto;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+@media only screen and (max-width: 1300px){
+	#gallery{			
+		display:grid;
+		grid-template-columns: auto auto;
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	#gallery{			
+		display:grid;
+		grid-template-columns: auto;
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+}
+
+
+#gallery>a{		
+  padding:5px;
+  text-align: center;
+}
+
+.movie-cell-image{
+	height:350px;
+	width:250px;
+}
+
+.movie-cell-link{
+	height:350px;
+	width:250px;
+	margin-top:100px;
+	margin-right:30%;
+}
+
+
+#movies{			
+	display:grid;
+	grid-template-columns: auto auto auto;
+	margin:0px auto;
+	width:80%;
+}
+
+
+@media only screen and (max-width: 1300px){
+	#movies{			
+		display:grid;
+		grid-template-columns: auto auto;
+		margin:0px auto;
+		width:80%;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	#movies{			
+		display:grid;
+		grid-template-columns: auto;
+		margin:0px auto;
+		width:80%;
+	}
+}
+
+.movie-cell-link-right{
+	margin-right:0px;
+	height:350px;
+	width:250px;
+	margin-top:100px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+#searchbar-container{
+		text-align:center;
+}
+
+#searchbar{
+	text-align:center;
+	padding:10px;
+	width:50%;
+	font-size:40px;
+	border-radius:22px;
+	background-color:black;
+	color:white;
+	border:1px solid white;
+}
+
+
+#search-list{
+	list-style-type:none;
+	font-family: list-font;
+	visibility:hidden;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	top:0;
+	left:0;
+	padding:10px;
+	text-align:center;
+}
+
+.list-li{
+	border:1px solid white;
+	background-color:rgba(211,211,211,0.5);
+}
+
+.list-li:hover{
+	border:1px solid white;
+	background-color:black;
+}
+
+.list-li>a{
+	text-decoration:none;
+	font-size:32px;
+	font-weight:500;
+	color:white;
+}
+
+.list-li>a:hover{
+	color:yellow;
+	background-color:transparent;
+}
+	
+#website-name{
+	text-align:center;
+	color:white;
+	font-size:50px;
+	font-family:rating-font;
+}
+
+#contents-guestbook{
+	
+	background-color:black;
+	color:white;
+}
+
+#contents-guestbook>img, #contents-guestbook>dl{
+	
+	text-align:center;
+	color:white;
+}
+
+
+.flip-card {
+	background-color: blue;
+	width: 50%;
+	height: 700px;
+	float:left;
+	perspective: 1000px;
+	font-size:50px;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front>h2, .flip-card-back>h2{
+	text-align:center;
+	margin-top:350px;
+	font-family:account-font;
+	letter-spacing:3px;
+}
+
+.flip-card-front>input, .flip-card-back>input, .flip-card-front>button, .flip-card-back>button {
+	font-size:25px;
+	border-radius:20px;
+	text-align:center;
+	font-family:account-font;
+	letter-spacing:3px;
+}
+
+.flip-card-front>button, .flip-card-back>button {
+	padding:10px;
+	border-radius:0px;
+}
+
+.flip-card-front>button:hover, .flip-card-back>button:hover {
+	background-color:black;
+	color:white;
+	border:1px solid white;
+}
+
+#login-username-input{
+	margin-top:280px;
+}
+
+#register-username-input{
+	margin-top:240px;
+}
+
+.flip-card-front {
+	background-color: black;
+	color: black;
+}
+
+.flip-card-back {
+	background-color: yellow;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.mapouter{
+	height:500px;
+	width:600px;
+}
+
+.gmap_canvas{
+	overflow:hidden;
+	background:none!important;height:500px;width:600px;
+}
+
+#contact-info{
+	color:white;
+	background-image: url("../image/contact-infobg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:black;
+	background-position:fixed;
+}
+
+#contact-info>p,a,ul{
+	color:white;
+	font-size:20px;
+	font-family:account-font;
+}
+
+
+#contact-heading{
+	color:white;
+	background-color:rgb(0,0,0);
+	text-align:center;
+	overflow:hidden;
+}
+
+#container1-contact{
+	float:left;
+	width:50%;
+}
+
+#container2-contact{
+	float:right;
+	width:50%;
+}
+
+#about{
+	color:white;
+	background-image: url("../image/contact-infobg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:black;
+	background-position:fixed;
+	font-size:18px;
+	text-align:center;
+}
+
+#about-heading{
+	color:white;
+	background-color:rgb(0,0,0);
+	text-align:center;
+	overflow:hidden;
+	font-size:30px;
+}
+
+#view{
+	background-color:black;
+	text-align:center;
+}
+
+#view>h1{
+	color:white;
+}
+
+#view>table{
+	color:white;
+	margin:10px auto;
+	font-size:18px;
+}
+
+#view>tr{
+	border:1px solid white;
+	color:white;
+}
+
+#view>td{
+	border:1px solid white;
+	color:white;
+}
+
+.flip-card2 {
+	background-color: transparent;
+	height: 350px;
+	width:250px;
+	float:left;
+	perspective: 1000px;
+	font-size:50px;
+}
+
+.flip-card-inner2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	
+}
+
+.flip-card2:hover .flip-card-inner2 {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front2, .flip-card-back2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front2>h2, .flip-card-back2>h2{
+	text-align:center;
+	font-family:account-font;
+	letter-spacing:3px;
+}
+
+
+.flip-card-front2 {
+	background-color: black;
+	color: white;
+}
+
+.flip-card-back2 {
+	background-color: black;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+#goodfellas-h2{
+	font-size:50px;
+}
+
+#interstellar-h2{
+	font-size:50px;
+}
+
+#leon-h2{
+	font-size:49px;
+}
+
+#error-page{
+	background-color:black;
+}
+

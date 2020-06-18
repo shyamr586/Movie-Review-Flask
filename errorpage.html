@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head lang = "en">
+		<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+		<link rel="icon" href ="../static/image/icon.jpg">
+		<meta charset = "UTF-8">
+		<title>Oops! An Error!</title>
+	</head>
+	<body id = "error-page">
+		
+	
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		
+		<div id="title">
+			<h1>Uh Oh! The website detected an error!</h1>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<div  id = "sadface-image"style = "text-align:center;">
+			<img src = "../static/image/sadface.jpg">
+		</div>
+		<br><br>
+		<p id = "error-message" style = "text-align:center;color:white;font-size:20px;">The error is '{{msg}}'</p>
+	</body>
+</html>
+	

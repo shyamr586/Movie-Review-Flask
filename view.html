@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+	<link rel="icon" href ="../static/image/icon.jpg">
+	<meta charset = "UTF-8">
+	<title>Guestbook Entries</title>
+</head>
+
+<body id = "view">
+
+	<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+
+	<h1>View Guestbook</h1>
+	<hr>
+		<table>
+			 <tr>
+				<th>Name</th>
+				<th>Comment</th> 
+			</tr>
+			{% for entry in entries %}
+				<tr>
+					<td> {{ entry[0]}} </td>
+					<td> {{ entry[1]}} </td>
+				</tr>
+			{% endfor %}
+		</table>
+</body>
+</html>

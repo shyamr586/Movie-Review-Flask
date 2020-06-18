@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+	<meta charset = "UTF-8">
+	<link rel="icon" href ="../static/image/icon.jpg">
+	<title>About</title>
+	</head>
+	<body id = "about">
+	
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		
+		<br><br>
+		<div id = "about-heading">
+			<h1> About </h2>
+		</div>
+		<hr>
+		<br>
+		<p id "about-content">This site was made for educational purposes only. The images, audio and video of the movie shown do not belong to me.<br><br>
+		The site was developed by me and so are the images which do not belong to any movies.<br><br>The trailers, posters and images all belong to 
+		the creators of the movies. The production companies responsible for the making of the movies and it's resources have been mentioned for all movies.
+		<br><br>The fonts used in this site were claimed to be commercial free and were available from <a id = "about-link" href = "https://www.1001fonts.com/">
+		1001 Fonts.</a><br><br>The videos were edited individually using a video editor.</p>
+		
+	</body>
+</html>

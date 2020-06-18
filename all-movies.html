@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head lang = "en">
+		<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+		<link rel="icon" href ="../static/image/icon.jpg">
+		<meta charset = "UTF-8">
+		<title>All Movies</title>
+	</head>
+	<body>
+	
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		<br><br>
+		<div id="title">
+			<h1>All Movies</h1>
+			<br>
+		</div>
+		<hr>
+		<br><br>
+		<div class = "background-class">
+			<video id="videobg" preload = "auto" autoplay = "true" loop = "loop" muted = "muted">
+				<source src = "../static/video/all-moviesbg.mp4" type = "video/mp4">
+			</video>
+		</div>
+			
+		
+		<div id="movies">
+			
+				
+			<a class = "movie-cell-link" href = "/blade-runner-2049">
+				<div class="flip-card2">
+			  <div class="flip-card-inner2">
+				<div class="flip-card-front2">
+				  <img class = "movie-cell-image" src ="../static/image/br2049-poster.jpg" alt= "Blade Runner 2049 poster">
+				</div>
+				<div class="flip-card-back2">
+				   <h2 class = "movie-names">Blade Runner 2049</h2>
+				</div>
+			  </div>
+			</div>
+			</a>
+			
+			
+			<a class = "movie-cell-link-right" href = "/seven-samurai">
+				<div class="flip-card2">
+			  <div class="flip-card-inner2">
+				<div class="flip-card-front2">
+				  <img class = "movie-cell-image" src ="../static/image/seven-samurai-poster.jpg" alt= "Seven Samurai poster">
+				</div>
+				<div class="flip-card-back2">
+				   <h2 class = "movie-names">Seven Samurai</h2>
+				</div>
+			  </div>
+			</div>
+			</a>
+			
+		
+			
+		</div>
+		
+		<br><br><br><br><br><br><br><br>
+		<div>
+			<h1 style = "color:white;text-align:center;">Recommended</h1>
+			<br>
+		</div>
+		<hr>
+		<br><br>
+		
+		<p style = "color:white; font-size: 18px; text-align:center">Don't feel like going outside? Watch a movie that matches the atmosphere outside.<br><br>{{message}}</p>
+		
+		<br><br>
+		
+		<div id="recommend" style = "margin-left:40%; margin-bottom:30%">
+			<a class = "movie-cell-link-right" href = "{{href}}">
+			<div class="flip-card2">
+			  <div class="flip-card-inner2">
+				<div class="flip-card-front2">
+				  <img class = "movie-cell-image" src ="{{src}}" alt= "Seven Samurai poster">
+				</div>
+				<div class="flip-card-back2">
+				   <p class = "movie-names">{{name}}</p>
+				</div>
+			  </div>
+			</div>
+			</a>
+		<br><br><br><br>
+		</div>
+		
+	
+	</body>
+</html>
+	

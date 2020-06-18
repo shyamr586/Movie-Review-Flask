@@ -1,0 +1,170 @@
+<html>
+	<head lang = "en">
+		<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+		<link rel="icon" href ="../static/image/icon.jpg">
+		<meta charset = "UTF-8">
+		<title>Blade Runner 2049</title>
+	</head>
+	<body>
+	
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		
+		<div id="title">
+			<h1>BLADE RUNNER 2049</h1>
+		</div>
+		<hr>
+		<div class = "background-class">
+			<video id="videobg" preload = "auto" autoplay = "true" loop = "loop" muted = "muted">
+				<source src = "../static/video/br2049-trailer2.mp4" type = "video/mp4">
+				<img src = "../static/image/br2049-image1.jpg">
+			</video>
+		</div>
+	
+		<p id = "music-title">Song: Mesa</p>
+		<div id="player-position">
+			<audio loop controls>
+				<source src="../static/audio/br2049-audio.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<br>
+		<div id = "movie-poster">
+			<img id = "poster-image" src = "../static/image/br2049-poster.jpg">
+			<p style = "color:white; font-size:22px; text-align:center;">IMDb rating: {{rating}}</p>
+		</div>
+		
+		
+		<div class= "content">
+			<h2>My review</h2>
+			<p id="firstpara-br2049"><br>If there is a piece of art that is paralyzaingly beautiful, the closest movie would be Blade Runner 2049.
+			This movie is a sequel to <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Blade_Runner">Blade Runner</a>, and it 
+			follows a new blade runner, Officer K who has unearthed a long left secret that could ruin the society itself. His mission is to find 
+			ex-blade runner Rick Deckard (played by <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Harrison_Ford">Harrison Ford</a>)
+			and find more about the secret. This movie is like no other. There have been many futuristic movies but none of them came close to be 
+			aesthetically pleasing as this movie did. The music in this movie is fantastic, composers <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Hans_Zimmer">
+			Hanz Zimmer</a> and <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Benjamin_Wallfisch">Benjamin Wallfisch</a> did a 
+			wonderful job setting the ambience throughout the movie. Speaking of ambience, cinematographer <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Roger_Deakins">
+			Roger Deakins</a> presented us with this eyegasmic view of things in that futuristic world and the Oscar he got for it was well deserved. Lead actor
+			playing the role of Officer K, <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Ryan_Gosling">Ryan Gosling</a> did a great job
+			of playing a helpless victim not knowing what to do. Unlike popular reamrks of actor <a id="link-br2049" target="_blank" href = "https://en.wikipedia.org/wiki/Jared_Leto">Jared Leto</a>,
+			he absolutely nailed playing Wallace in this movie and has that god-like way of speaking and doing things. Over all this is a wonderful movie however
+			I do not think it is everyone's cup of tea. This movie is a slow burn. And for a good reason at that. If people believed the movie would be packed with
+			action sequences, they will be uninterested with this movie.</p>
+			
+			<br><br><br><br>
+			
+			<h2>Spoiler Review</h2>
+			<p id="spoiler-br2049"><br>This movie for me is a 100% rewatchable. It is not because of the story but because of the feel it gives. Even the streets
+			which can just be uninteresting naturally has never been more interesting in a movie ever. The sound effect of a car engine(?) pops up every 10
+			minutes or so and it gives off this cool-yet-suspensive vibe in all the scenes. I liked the character of Joi and her relationship with K. Upon viewing
+			we see that K is not trapped literally but in a situation of helplessness as Joi literally tells you what you want to hear. If it weren't for that
+			character, the movie would have been totally bland. Back to the cinematographer, I have no idea how he thought of this in his mind. The color pallete in almost
+			every scene is unnatural like it's supposed to be and most importantly very eye-catching. Naturally, there are many scenes that I love re-watching
+			the scene in which Officer K explores the ruins of Las Vegas
+			which also shows the beauty of silence, the <a id="spoiler-link-br2049" target="_blank" href = "https://www.youtube.com/watch?v=vrP-_T-h9YM">baseline test scenes
+			(NOTE: VIEWER DISCRETION ADVICED)</a> and <a id="spoiler-link-br2049" target="_blank" href = "https://www.youtube.com/watch?v=UXS8E4szcSc">Jared Leto's method acting</a>.
+			</p>
+			
+			<br><br><br><br>
+			
+			<h2>Rating</h2>
+			<p id="rating">Definitely a 10/10. Even while reviewing this movie it made me want to watch this movie all over again. Movies like these
+			motivate people to make something atleast as remotely as close as this masterpiece.</p>
+			<br><br>
+			
+		</div>
+		
+		<div id = "table-container">
+			<table id = "content-table">
+				<tr>
+					<th>Release Date</th>
+					<th>Director</th>
+					<th>Cast</th>
+					<th>Budget</th>
+					<th>Box Office</th>
+					<th>Music</th>
+					<th>Cinematographer</th>
+					<th>Production Company</th>
+				</tr>
+				
+				<tr>
+					<td>October 3, 2017</td>
+					<td>Denis Villeneuve</td>
+					<td id= "cast">Ryan Gosling<br><br>Ana de Armas<br><br>Harrison Ford<br><br>Jared Leto<br><br>Dave Bautista<br><br>Robin Wright</td>
+					<td>$150-185 million</td>
+					<td>$259.2 million</td>
+					<td>Hans Zimmer<br><br>Benjamin Wallfisch.</td>
+					<td>Roger Deakins</td>
+					<td>Columbia Pictures<br><br>Scott Free Productions</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<div id="gallery">
+			<a class = "gallery-link" target="_blank" href = "../static/image/br2049-image1.jpg">
+				<img class = "gallery-image-br2049" src ="../static/image/br2049-image1.jpg" alt= "Detective walking further away from futiritic car">
+			</a>
+			<a class = "gallery-link-br2049" target="_blank" href = "../static/image/br2049-image2.jpg">
+				<img class = "gallery-image-br2049" src = "../static/image/br2049-image2.jpg" alt = "Detective looking the other side while in a gentle golden sand storm">
+			</a>
+			<a class = "gallery-link" target="_blank" href = "../static/image/br2049-image3.jpg">
+				<img class = "gallery-image-br2049" src = "../static/image/br2049-image3.jpg" alt = "Detective looking at a bald man inside the archive reception which is bright yellow">
+			</a>
+			<a class = "gallery-link" target="_blank" href = "../static/image/br2049-image4.jpg">
+				<img class = "gallery-image-br2049" src = "../static/image/br2049-image4.jpg" alt = "Detective looking up to a giant hologram of a woman that is talking to her">
+			</a>
+			<a class = "gallery-link" target="_blank" href = "../static/image/br2049-image5.jpg" alt = "Wallace looking front.">
+				<img class = "gallery-image-br2049" src = "../static/image/br2049-image5.jpg">
+			</a>
+			<a class = "gallery-link" alt = "Blade runner 2049 trailer.">
+				<video class = "gallery-image-br2049" controls = "controls">
+					<source src = "../static/video/br2049-trailer2.mp4">
+				</video>
+			</a>
+		</div>
+		
+		
+		
+		<div class = "comments" style = "position:absolute; margin-top:570px; margin-bottom:20px; background-color:rgba(0,0,0,0.5);padding:10px; width:68.5%; margin-left:15%;">
+			{% if session['logged in']==True%}
+				<form action="{{ url_for('sign1') }}" method="post">
+					<input name="userid" type="hidden">
+				<textarea class="textarea" placeholder="Type Something" name="content" style = "width:100%; height:100px; font-size:20px; font-family:courier;"></textarea>
+				<br><br><button class="commentb" type="submit" style = "font-size:20px; border-radius: 20px;">Submit Comment</button>
+			</form>
+			{% else %}
+				<br><br>
+				<p style = "color:red; font-size:20px;">Please <b><a style="color:white;" href="/account" >login</a></b> to comment on this post.</p>
+			{% endif %}
+		</div>
+		
+		<table style = "position:absolute; margin-top:760px; margin-bottom:20px; background-color:rgba(0,0,0,0.5);padding:10px; width:70%; margin-left:15%;">
+			 <tr>
+				<th>Userame</th>
+				<th>Comment</th> 
+			</tr>
+			{% for entry in entries %}
+				<tr>
+					<td> {{ entry[0]}} </td>
+					<td style = "font-family:courier; color:black; background-color:white; text-align:left;"> {{ entry[1]}} </td>
+				</tr>
+			{% endfor %}
+		</table>
+		
+		
+	</body>
+</html>
+	
+	

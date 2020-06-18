@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head lang = "en">
+		
+		<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+		<link rel="icon" href ="../static/image/icon.jpg">
+		<meta charset = "UTF-8">
+		<script>
+			function showList(){
+				var searchlist = document.getElementById("search-list");
+				searchlist.setAttribute("style","visibility: visible;");
+			}
+			
+			function filterList(){
+				var input, filter, ul, li, a, i, txtValue;
+				input = document.getElementById("searchbar");
+				filter = input.value.toUpperCase();
+				ul = document.getElementById("search-list");
+				li = ul.getElementsByTagName("li");
+				for (i = 0; i < li.length; i++) {
+					a = li[i].getElementsByTagName("a")[0];
+					txtValue = a.textContent || a.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+		<title>Film Fnatic</title>
+	</head>
+	<body>
+	
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		<br><br>
+		<h1 id="website-name">Film Fnatic</h1>
+		<hr>
+		
+		
+		
+		<div class = "background-class">
+			<video id="videobg-home" preload = "auto" autoplay = "true" loop = "loop" muted = "muted">
+				<source src = "../static/video/video-bg.mp4" type = "video/mp4">
+			</video>
+			
+		</div>
+		<br><br><br><br><br><br><br><br><br><br>
+		<div id="contents-home">
+			<div id = "searchbar-container">
+				<input id = "searchbar" onkeyup = filterList() onclick = showList() placeholder = "Enter name of the movie">
+			</div>
+			<div id = "list">
+			<ul id = "search-list">
+				<li class = "list-li"><a class = "list-a" href = "/blade-runner-2049">Blade Runner 2049</a></li>
+				<li class = "list-li"><a class = "list-a" href = "/seven-samurai">Seven Samurai</a></li>
+			<br><br>
+			</div>
+		</div>
+		
+		<br><br><br><br><br><br>
+		<div id = "news-container" style = "background-color: rgba(0,0,0,0.9); width:75%; border-radius:20px; margin:10px auto;">
+			<br>
+			<h2 style = "text-align: center;">Movie News:</h2>
+			<hr>
+			<br><br>
+			
+			<br><br>
+				<div style = "width:50%;margin:10px auto;">
+					<a style = "text-decoration:none;" href = "{{hrefofsite1}}">
+						<div style = "width:100%;height:200px;">
+							<img style = "width:100%;height:100%; border-radius:10px;"src = "{{src1}}"></img>
+						</div>
+						<br><br>
+						<p style = "font-size: 24px; text-align: center;">{{name1}}</p>
+					</a>
+				</div>
+				<br><br>
+				<div style = "width:50%;margin:10px auto;">
+					<a style = "text-decoration:none;" href = "{{hrefofsite2}}">
+						<div style = "width:100%;height:200px;">
+							<img style = "width:100%;height:100%;  border-radius:10px;"src = "{{src2}}"></img>
+						</div>
+						<br><br>
+						<p style = "font-size: 24px; text-align: center;">{{name2}}</p>
+					</a>
+				</div>
+				<br><br>
+				<div style = "width:50%;margin:10px auto;">
+					<a style = "text-decoration:none;" href = "{{hrefofsite3}}">
+						<div style = "width:100%;height:200px;">
+							<img style = "width:100%;height:100%;  border-radius:10px;"src = "{{src3}}"></img>
+						</div>
+						<br><br>
+						<p style = "font-size: 24px; text-align: center;">{{name3}}</p>
+					</a>
+				</div>
+			<br><br>
+		</div>
+		
+		
+	</body>
+</html>
+	

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	<link rel = "stylesheet" type = "text/CSS" href = "../static/style/movie-review-style.CSS">
+	<meta charset = "UTF-8">
+	<link rel="icon" href ="../static/image/icon.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Account</title>
+	
+	</head>
+	<body style = "background-color:black">
+		
+		<ul class = "nav-bar">
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/">Home</a></li>
+			{% if session['logged in'] == True %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/logout" style = "color:red">Logout</a></li>
+			{% else %}
+				<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/account">Accounts</a></li>
+			{%endif%}
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/all-movies">All Movies</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/about">About</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/contact-info">Contact Information</a></li>
+			<li class = "nav-bar-li"><a class = "nav-bar-a" href = "/guestbook">Guestbook</a></li>
+			<li class = "nav-bar-li" id="icon-element"><a class = "nav-bar-a" id = "icon-a" href = "/"><img id="icon-image" src = "../static/image/icon.jpg"></a></li>
+		</ul>
+		
+		<form action="{{ url_for('login') }}" method= "POST">
+			<div class="flip-card">
+				 <div class="flip-card-inner">
+					<div class="flip-card-front">
+						<h2>Login</h2>
+					</div>
+					<div class="flip-card-back">
+						<input id = "login-username-input" placeholder = "Enter username." required type = "text" name = "username2" ></input>
+						<br><br>
+						 <input placeholder = "Enter password" type = "password" required type = "text" name = "password2"></input>
+						 <br><br>
+						 <button type = "submit">Login</button>
+						 <br>
+							<p id = "wrong" style="color:red; text-align:center; font-size:20px;">{{msg}}</p>
+					</div>
+				 </div>
+			</div>
+		</form>
+
+		<form action="{{ url_for('signup') }}" method= "POST">
+			<div id= "flip-card2" class = "flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<h2>Register</h2>
+					</div>
+					<div class="flip-card-back">
+						 <input id = "register-username-input" placeholder = "Enter a username." required type = "text" name = "username" ></input>
+						 <br><br>
+						 <input placeholder = "Enter a password" type = "password" required name = "password"></input>
+						 <br><br>
+						 <input placeholder = "Enter your E-Mail" type = "text" required name = "email"></input>
+						 <br><br>
+						 <button type = "submit" value = "login">Register</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<br><br>
+		<div id="logout">
+			{% if session['logged in'] == True %}
+				<button style = "font-size:35px; border-radius:20px; text-align:center;  letter-spacing:3px; background-color:black; color:white; margin-left:48%; text-decoration:none;"><a href="/logout">LOG OUT</a></button>
+			{% else %}
+				   <p style="color:red; text-align:center;">Log in to enter comments</a></button>
+			{%endif%}
+		</div>
+	</body>
+</html>
+
+
+
